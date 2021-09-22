@@ -1,0 +1,6 @@
+# jobs/app_job/monit
+check process app_job
+  with pidfile /var/vcap/sys/run/bpm/app_job/app_job.pid
+  start program "/var/vcap/jobs/bpm/bin/bpm start app_job"
+  stop program "/var/vcap/jobs/bpm/bin/bpm stop app_job"
+  group vcap

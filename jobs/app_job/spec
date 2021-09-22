@@ -1,0 +1,12 @@
+---
+name: app_job
+
+templates:
+  config/bpm.yml.erb: config/bpm.yml
+
+packages:
+  - app_package
+
+properties:
+  app.response_body:
+    description: "The response body returned by the app when the API is called"

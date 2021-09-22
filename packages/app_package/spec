@@ -1,0 +1,8 @@
+---
+name: app_package
+
+dependencies:
+- golang-1.17-linux
+
+files:
+- app/**/*

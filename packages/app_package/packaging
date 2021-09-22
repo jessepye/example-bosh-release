@@ -1,0 +1,13 @@
+#!/bin/bash
+set -ex
+
+source /var/vcap/packages/golang-1.17-linux/bosh/compile.env
+export GOBIN="${BOSH_INSTALL_TARGET}/bin"
+export GO111MODULE=on
+
+mkdir -p ${GOBIN}
+
+pushd app
+  go build -o main main.go
+  cp main ${GOBIN}
+popd

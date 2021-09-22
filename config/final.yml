@@ -1,0 +1,5 @@
+name: example-bosh-release
+blobstore:
+  provider: gcs
+  options:
+    bucket_name: hw-example-release-blobs

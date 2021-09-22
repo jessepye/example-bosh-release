@@ -1,0 +1,15 @@
+# BOSH
+config/dev.yml
+config/private.yml
+.blobs
+blobs/
+releases/*.tgz
+releases/**/*.tgz
+.final_builds/jobs/**/*.tgz
+.final_builds/packages/**/*.tgz
+.dev_builds
+dev_releases
+
+.idea
+.DS_Store
+tmp/*

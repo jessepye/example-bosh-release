@@ -1,0 +1,14 @@
+<%=
+
+  response_body = p("app.response_body")
+
+  env = {}
+  env["RESPONSE_BODY"] = "#{response_body}"
+
+  app_job_process = {}
+  app_job_process["name"] = "app_job"
+  app_job_process["executable"] = "/var/vcap/packages/app_package/bin/main"
+  app_job_process["env"] = env
+  bpm = {"processes" => [app_job_process] }
+  YAML.dump(bpm)
+  %>
