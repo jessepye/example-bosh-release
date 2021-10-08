@@ -31,4 +31,4 @@ instance_groups:
     vm_type: micro
     stemcell: bosh-google-kvm-ubuntu-xenial-go_agent
     networks:
-      - name: ((subnet))
+      - name: quicksilver
